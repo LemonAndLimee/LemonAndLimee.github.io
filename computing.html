@@ -92,16 +92,16 @@ a {
 
 <hr id="titlebreak">
 
-<div class="unit" id="hardware">Unit 1: Hardware</div>
-<div class="unit" id="lo">Unit 2: Logical Operations</div>
-<div class="unit" id="comms">Unit 3: Communications</div>
-<div class="unit" id="osd">Unit 4: Organisation and Structure of Data</div>
-<div class="unit" id="os">Unit 5: Operating Systems</div>
-<a class="unitlink" href="computing-unit-6.html"><div class="unit" id="pro">Unit 6: Principles of Programming</div></a>
-<div class="unit" id="soft">Unit 7: Software engineering & Program Construction</div>
-<div class="unit" id="pc">Unit 8: Program Construction</div>
-<div class="unit" id="sec">Unit 9: Security and Data Management</div>
-<div class="unit" id="en">Unit 10: Ethical, legal & environmental impacts of digital technology</div>
+<div class="unit" id="hardware"><div class="text">Unit 1: Hardware</div></div>
+<div class="unit" id="lo"><div class="text">Unit 2: Logical Operations</div></div>
+<div class="unit" id="comms"><div class="text">Unit 3: Communications</div></div>
+<div class="unit" id="osd"><div class="text">Unit 4: Organisation and Structure of Data</div></div>
+<div class="unit" id="os"><div class="text">Unit 5: Operating Systems</div></div>
+<a class="unitlink" href="computing-unit-6.html"><div class="unit" id="pro"><div class="text">Unit 6: Principles of Programming</div></div></a>
+<div class="unit" id="soft"><div class="text">Unit 7: Software engineering & Program Construction</div></div>
+<div class="unit" id="pc"><div class="text">Unit 8: Program Construction</div></div>
+<div class="unit" id="sec"><div class="text">Unit 9: Security and Data Management</div></div>
+<div class="unit" id="en"><div class="text">Unit 10: Ethical, legal & environmental impacts of digital technology</div></div>
 
 
 </div>
@@ -110,6 +110,7 @@ a {
 </div>
 
 <style type="text/css">
+
 body {
 	background-image: linear-gradient(#2d88c8, #013254, #00101c);
 	background-repeat: no-repeat;
@@ -138,6 +139,15 @@ body {
 #titlebreak {
 	width: 60%;
 }
+.text {
+	opacity: 0;
+	background-color: #182b61;
+	height: 100%;
+	margin-top: -40px;
+	padding-top: 40px;
+	width: 100%;
+	border-radius: 40px;
+}
 .unit {
 	margin-top: 50px;
 	height: 70px;
@@ -148,10 +158,14 @@ body {
 	color: white;
 	font-family: georgia;
 	font-weight: bold;
-	border-radius: 10px;
+	border-radius: 40px;
+	transition: .5s ease;
 }
 .unit:hover {
-	border-radius: 40px;
+	opacity: 0.5;
+}
+.unit:hover .text {
+	opacity: 1;
 }
 .unitlink {
 	text-decoration: none;
@@ -161,89 +175,69 @@ body {
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 }
-#hardware:hover {
-	opacity: 0.5;
-}
+
 #lo {
 	background-image: url("https://bitwiredblog.files.wordpress.com/2014/01/head10.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 25%;
 }
-#lo:hover {
-	opacity: 0.5;
-}
+
 #comms {
 	background-image: url("https://www.mediashower.com/img/3374/ThinkstockPhotos-178915467.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 30%;
 }
-#comms:hover {
-	opacity: 0.5;
-}
+
 #osd {
 	background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX18324166.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 30%;
 }
-#osd:hover {
-	opacity: 0.5;
-}
+
 #os {
 	background-image: url("https://3.bp.blogspot.com/-p2aU88rrCoQ/Vz2gqRojOwI/AAAAAAAABek/_EOC2RTSl_IH6UCcPgw6EbykKZjyOV8SgCLcB/s1600/Modern-Mobile-Operating-Systems.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 55%;
 }
-#os:hover {
-	opacity: 0.5;
-}
+
 #pro {
 	background-image: url("https://www.commercialintegrator.com/wp-content/uploads/2017/05/Code-image-1400x650.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 95%;
 }
-#pro:hover {
-	opacity: 0.5;
-}
+
 #soft {
 	background-image: url("https://www.edx.org/sites/default/files/course/image/promoted/softeng1-v4_378x225.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 70%;
 }
-#soft:hover {
-	opacity: 0.5;
-}
+
 #pc {
 	background-image: url("https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/fb66199/2147483647/resize/800x%3E/quality/90/?url=https%3A%2F%2Fatd-brightspot.s3.amazonaws.com%2F48%2F85%2F8f189edc45ebb77607709c3c31d1%2Fthinkstockphotos-629285904.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 70%;
 }
-#pc:hover {
-	opacity: 0.5;
-}
+
 #sec {
 	background-image: url("http://www.rpheng.com/images/software_engineering.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 90%;
 }
-#sec:hover {
-	opacity: 0.5;
-}
+
 #en {
 	background-image: url("https://www.tescoplc.com/media/1295/pho_impact_environment.jpg?anchor=center&mode=crop&width=830&height=467&rnd=131552261500000000");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 90%;
 }
-#en:hover {
-	opacity: 0.5;
-}
+
 #footer {
 	height: 80px;
 	background-color: white;
