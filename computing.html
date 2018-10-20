@@ -90,6 +90,8 @@ a {
 
 <div id="title">Computer Science</div>
 
+<hr id="titlebreak">
+
 <div class="unit" id="hardware">Unit 1: Hardware</div>
 <div class="unit" id="lo">Unit 2: Logical Operations</div>
 <div class="unit" id="comms">Unit 3: Communications</div>
@@ -129,9 +131,12 @@ body {
 	font-weight: bold;
 	text-align: center;
 	color: black;
-	font-size: 3em;
-	padding-bottom: 50px;
+	font-size: 2em;
 	font-family: times;
+	padding-bottom: 10px;
+}
+#titlebreak {
+	width: 60%;
 }
 .unit {
 	margin-top: 50px;
@@ -143,9 +148,10 @@ body {
 	color: white;
 	font-family: georgia;
 	font-weight: bold;
+	border-radius: 10px;
 }
 .unit:hover {
-	border-radius: 20px;
+	border-radius: 40px;
 }
 .unitlink {
 	text-decoration: none;
