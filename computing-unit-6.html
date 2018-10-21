@@ -88,11 +88,13 @@ a {
 
 <div id="main">
 
+
+
 <div id="title">Unit 6: Principles of Programming</div>
 
 <hr id="titlebreak">
 
-<a class="topiclink" href="computing-unit-6-topic-1.html"><div class="topic">- High Level and Low Level Languages</div></a>
+<a class="topiclink" href="computing-unit-6-topic-1.html"><div class="topic" id="topic1"><div class="text">High Level and Low Level Languages</div></div></a>
 
 </div>
 
@@ -127,18 +129,38 @@ body {
 #titlebreak {
 	width: 60%;
 }
-.topic {
-	margin-top: 60px;
-	text-align: center;
+.text {
+	opacity: 0.8;
+	background-color: #182b61;
+	font-family: georgia;
+	height: 100%;
+	margin-top: -40px;
+	padding-top: 40px;
+	width: 100%;
+	border-radius: 40px;
 	font-size: 1.2em;
-	width: 70%;
-	margin-left: 15%;
-	padding-top: 20px;
-	border-radius: 20px;
-	color: black;
-	font-weight: bold;
-	font-family: times;
 }
+.topic {
+	margin-top: 50px;
+	height: 70px;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	padding-top: 40px;
+	color: white;
+	font-family: georgia;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: .5s ease;
+	opacity: 0.8;
+}
+.topic:hover {
+	opacity: 1;
+}
+.topic:hover .text {
+	opacity: 1;
+}
+
 .topiclink {
 	text-decoration: none;
 }
