@@ -100,18 +100,23 @@ a {
 <form>
 <div class="question">
 <div class="qheader">What is machine code made up of?</div></br>
-<input type="radio" name="gender" value="a"> Commands that resemble natural human languages<br><br>
-<input type="radio" name="gender" value="b"> Binary and hexadecimal instructions<br><br>
-<input type="radio" name="gender" value="c"> Cypher text<br><br>
+<input class="input" type="radio" name="question1" value="a"> Commands that resemble natural human languages<br><br>
+<input class="input" type="radio" name="question1" value="b"> Binary and hexadecimal instructions<br><br>
+<input class="input" type="radio" name="question1" value="c"> Cypher text<br><br>
 </div>
 </br>
 <div class="question">
-<div class="qheader">What is machine code made up of?</div></br>
-<input type="radio" name="gender" value="a"> Commands that resemble natural human languages<br><br>
-<input type="radio" name="gender" value="b"> Binary and hexadecimal instructions<br><br>
-<input type="radio" name="gender" value="c"> Cypher text<br><br>
+<div class="qheader">Which of these applies to high level languages?</div></br>
+<input class="input" type="radio" name="question2" value="a"> They are easier to understand, learn and program as they are similar to natural language.<br><br>
+<input class="input" type="radio" name="question2" value="b"> They are preferred when the execution speed is critical.<br><br>
+<input class="input" type="radio" name="question2" value="c"> They require less time for translation into machine code.<br><br>
+<input class="input" type="radio" name="question2" value="d"> They do not need translating into a form the CPU can understand..<br><br>
 </div>
-
+</br>
+<div class="question">
+<div class="qheader">Fill in the blank:</div></br>
+<input class="input" type="text" name="question3" id="q3"> is more simple than high level languages, but easier to understand <span class="input">than pure machine code.</span>
+</div>
 </br></br></br></br> 
 <button type="button" onclick="myFunction()">Submit</button>
 </form>
@@ -125,10 +130,22 @@ a {
 
 <script type="text/javascript">
 
-	var score = 0
+	var score = 0;
 	
-	function myFunction() {
-		alert(document.querySelector('input[name="gender"]:checked').value);
+	var radioanswers = ["b", "a"];
+	
+	function myFunction() {	
+		score = 0;
+		if ((document.querySelector('input[name="question1"]:checked').value) == radioanswers[0]) {
+			score++;
+		}
+		if ((document.querySelector('input[name="question2"]:checked').value) == radioanswers[1]) {
+			score++;
+		}
+		if (document.getElementById("q3").value == "Assembly language" || "Assembly Language" || "assembly language" || "Assembly code" || "Assembly Code" || "assembly code") {
+			score ++;
+		}
+		alert(score);
 	}
 
 </script>
@@ -143,6 +160,7 @@ a {
 	background-color: #e3e3e3;
 	width: 70%;
 	padding: 5px 5px 5px 5px;
+	
 }
 .qheader {
 	font-size: 1.1em;
@@ -152,7 +170,7 @@ form {
 	margin-top: -60%;
 	padding-left: 20%;
 }
-input {
+.input {
 	margin-left: 5%;
 }
 body {
