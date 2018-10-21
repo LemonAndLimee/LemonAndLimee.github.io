@@ -97,6 +97,27 @@ a {
 
 <div id="content"></div>
 
+<form>
+<div class="question">
+<div class="qheader">What is machine code made up of?</div></br>
+<input type="radio" name="gender" value="a"> Commands that resemble natural human languages<br><br>
+<input type="radio" name="gender" value="b"> Binary and hexadecimal instructions<br><br>
+<input type="radio" name="gender" value="c"> Cypher text<br><br>
+</div>
+</br>
+<div class="question">
+<div class="qheader">What is machine code made up of?</div></br>
+<input type="radio" name="gender" value="a"> Commands that resemble natural human languages<br><br>
+<input type="radio" name="gender" value="b"> Binary and hexadecimal instructions<br><br>
+<input type="radio" name="gender" value="c"> Cypher text<br><br>
+</div>
+
+</br></br></br></br> 
+<button type="button" onclick="myFunction()">Submit</button>
+</form>
+
+
+
 </div>
 
 <div id="footer">
@@ -104,9 +125,36 @@ a {
 
 <script type="text/javascript">
 
+	var score = 0
+	
+	function myFunction() {
+		alert(document.querySelector('input[name="gender"]:checked').value);
+	}
+
 </script>
 
+
+
+
+
+
 <style type="text/css">
+.question {
+	background-color: #e3e3e3;
+	width: 70%;
+	padding: 5px 5px 5px 5px;
+}
+.qheader {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+form {
+	margin-top: -60%;
+	padding-left: 20%;
+}
+input {
+	margin-left: 5%;
+}
 body {
 	background-image: linear-gradient(#2d88c8, #013254, #00101c);
 	background-repeat: no-repeat;
@@ -143,7 +191,6 @@ a {
 	height: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;
 	
 }
 .subtitle {
