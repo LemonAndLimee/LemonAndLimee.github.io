@@ -88,21 +88,13 @@ a {
 
 <div id="main">
 
-<div id="title">Computer Science</div>
+
+
+<div id="title">Unit 9: Security and Data Management</div>
 
 <hr id="titlebreak">
 
-<div class="unit" id="hardware"><div class="text">Unit 1: Hardware</div></div>
-<div class="unit" id="lo"><div class="text">Unit 2: Logical Operations</div></div>
-<div class="unit" id="comms"><div class="text">Unit 3: Communications</div></div>
-<div class="unit" id="osd"><div class="text">Unit 4: Organisation and Structure of Data</div></div>
-<div class="unit" id="os"><div class="text">Unit 5: Operating Systems</div></div>
-<a class="unitlink" href="computing-unit-6.html"><div class="unit" id="pro"><div class="text">Unit 6: Principles of Programming</div></div></a>
-<a class="unitlink" href="computing-unit-7.html"><div class="unit" id="soft"><div class="text">Unit 7: Software engineering & Program Construction</div></div></a>
-<div class="unit" id="pc"><div class="text">Unit 8: Program Construction</div></div>
-<a class="unitlink" href="computing-unit-9.html"><div class="unit" id="sec"><div class="text">Unit 9: Security and Data Management</div></div></a>
-<div class="unit" id="en"><div class="text">Unit 10: Ethical, legal & environmental impacts of digital technology</div></div>
-
+<a class="topiclink" href="#"><div class="topic" id="topic1"><div class="text">Malware and Protection</div></div></a>
 
 </div>
 
@@ -110,7 +102,6 @@ a {
 </div>
 
 <style type="text/css">
-
 body {
 	background-image: linear-gradient(#2d88c8, #013254, #00101c);
 	background-repeat: no-repeat;
@@ -123,8 +114,7 @@ body {
 	background-color: #ececec;
 	width: 60%;
 	margin: auto;
-	height: 1900px;
-	font-family: helvetica;
+	height: 1000px;
 }
 #title {
 	padding-top: 80px;
@@ -150,7 +140,7 @@ body {
 	border-radius: 40px;
 	font-size: 1.2em;
 }
-.unit {
+.topic {
 	margin-top: 50px;
 	height: 70px;
 	text-align: center;
@@ -164,16 +154,16 @@ body {
 	transition: .5s ease;
 	opacity: 0.8;
 }
-.unit:hover {
+.topic:hover {
 	opacity: 1;
 }
-.unit:hover .text {
+.topic:hover .text {
 	opacity: 1;
-}
-.unitlink {
-	text-decoration: none;
 }
 
+.topiclink {
+	text-decoration: none;
+}
 #footer {
 	height: 80px;
 	background-color: white;

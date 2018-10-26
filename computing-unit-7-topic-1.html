@@ -5,7 +5,7 @@
 <title>GCSE Revision</title>
 
 <div id="header">
-<div id="webtitle">GSCE Revision</div>
+<div id="webtitle">GCSE Revision</div>
 <a href="index.html"><div class="headertitle">Home</div></a>
 <div class="headertitle">
  <div class="dropdown">
@@ -88,29 +88,37 @@ a {
 
 <div id="main">
 
-<div id="title">Computer Science</div>
+<div id="title">Integrated Development Environment</div>
 
 <hr id="titlebreak">
 
-<div class="unit" id="hardware"><div class="text">Unit 1: Hardware</div></div>
-<div class="unit" id="lo"><div class="text">Unit 2: Logical Operations</div></div>
-<div class="unit" id="comms"><div class="text">Unit 3: Communications</div></div>
-<div class="unit" id="osd"><div class="text">Unit 4: Organisation and Structure of Data</div></div>
-<div class="unit" id="os"><div class="text">Unit 5: Operating Systems</div></div>
-<a class="unitlink" href="computing-unit-6.html"><div class="unit" id="pro"><div class="text">Unit 6: Principles of Programming</div></div></a>
-<a class="unitlink" href="computing-unit-7.html"><div class="unit" id="soft"><div class="text">Unit 7: Software engineering & Program Construction</div></div></a>
-<div class="unit" id="pc"><div class="text">Unit 8: Program Construction</div></div>
-<a class="unitlink" href="computing-unit-9.html"><div class="unit" id="sec"><div class="text">Unit 9: Security and Data Management</div></div></a>
-<div class="unit" id="en"><div class="text">Unit 10: Ethical, legal & environmental impacts of digital technology</div></div>
+<a href="computing-unit-7-topic-1.html"><div class="subtitle" id="revision">Revision</div></a>
+<a href="#"><div class="subtitle" id="quiz">Quiz</div></a>
 
+<div id="content">
+<p>An Integrated Development Environment (IDE) <span>allows the user to write computer programs</span>, using specialised tools to help them program. <span>Examples of these tools are editors, debuggers and linkers.</span></p>
+<br><br><br>
+
+<h2>Editor</h2>
+<p>An editor allows a programmer to <span>enter, format and edit computer code</span>. Different commands and functions may be <span>different colours</span> to allow a programmer to <span>easily distinguish the different parts of the code</span>. The editor is extremely important because without it, the user would not be able to enter the source code.</p>
+<br><br><br>
+<h2>Compiler</h2>
+<p>A compiler <span>converts the high level code into executable machine code</span> for a later time (<span>the entire program is converted</span>, not one line at a time). It is slower to compile code than to interpret it but it can be executed faster once it has been compiled.</p>
+<br><br><br>
+<h2>Interpreter</h2>
+<p>An interpreter <span>converts the high level code one line at a time</span>, into machine code and then executes it. It is <span>easier to debug</span> interpreted code as you can run each line at a time, searching for bugs. However, it is <span>slower to execute</span> than compiled code.</p>
+</div>
 
 </div>
 
 <div id="footer">
 </div>
 
-<style type="text/css">
+<script type="text/javascript">
 
+</script>
+
+<style type="text/css">
 body {
 	background-image: linear-gradient(#2d88c8, #013254, #00101c);
 	background-repeat: no-repeat;
@@ -123,8 +131,7 @@ body {
 	background-color: #ececec;
 	width: 60%;
 	margin: auto;
-	height: 1900px;
-	font-family: helvetica;
+	height: 1600px;
 }
 #title {
 	padding-top: 80px;
@@ -139,41 +146,46 @@ body {
 #titlebreak {
 	width: 60%;
 }
-.text {
-	opacity: 0.8;
-	background-color: #182b61;
-	font-family: georgia;
-	height: 100%;
-	margin-top: -40px;
-	padding-top: 40px;
-	width: 100%;
-	border-radius: 40px;
-	font-size: 1.2em;
-}
-.unit {
-	margin-top: 50px;
-	height: 70px;
-	text-align: center;
-	width: 50%;
-	margin-left: 25%;
-	padding-top: 40px;
-	color: white;
-	font-family: georgia;
-	font-weight: bold;
-	border-radius: 40px;
-	transition: .5s ease;
-	opacity: 0.8;
-}
-.unit:hover {
-	opacity: 1;
-}
-.unit:hover .text {
-	opacity: 1;
-}
-.unitlink {
+a {
 	text-decoration: none;
 }
-
+#content {
+	width: 95%;
+	background-color: #ececec;
+	height: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	padding-top: 5px;
+	padding-left: 15px;	
+	font-size: 1.2em;
+}
+h2 {
+	text-decoration: underline;
+}
+p {
+	font-family: cambria, arial;
+}
+span {
+	background-color: #a8ddfc;
+	border-radius: 5px;
+}
+img {
+	margin-left: 8%;
+	margin-bottom: 100px;
+}
+.subtitle {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: auto;
+	width: 100px;
+	border-radius: 10px;
+}
+#revision {
+	background-color: #d6d6d6;
+}
 #footer {
 	height: 80px;
 	background-color: white;
