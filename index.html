@@ -90,6 +90,7 @@ a {
 
 <div class="container">
 <p class="title">Newly added:<p>
+<a class="content" href="german.html"><p>- German</p></a>
 <a class="content" href="computing-unit-7.html"><p>- Computer Science Unit 7</p></a>
 <a class="content" href="computing-unit-6.html"><p>- Computer Science Unit 6</p></a>
 </div>
@@ -111,6 +112,8 @@ a {
 <p class="content">- Understand your learning style</p>
 </div>
 
+<button id="random" onclick="rtopic(10)">Random GCSE Topic</button>
+
 <a href="https://www.bbc.com/bitesize/levels/z98jmp3"><img id="bitesizelink" src="http://www.oasisacademyimmingham.org/sites/default/files/styles/large/public/BBC%20Bitesize.png?itok=ya-zJCg9"/></a>
 <a href="http://moodle.ralphthoresby.com/moodle2/login/index.php"><img id="moodlelink" src="https://moodle.org/logo/preview-moodle-logo.png"/></a>
 <a href="https://www.csnewbs.com/"><img id="csnlink" src="csnewbslogo.png"/></a>
@@ -120,6 +123,22 @@ a {
 
 <div id="footer">
 </div>
+
+<script type="text/javascript">
+
+	var links = ["computing-unit-6-topic-1.html", "computing-unit-7-topic-1.html"];
+
+	var random = function(n) {
+		return Math.floor(Math.random() * n);
+	}
+
+	function rtopic() {
+		ran = random(links.length);
+		location.href = links[ran];
+	
+	}
+
+</script>
 
 <style type="text/css">
 body {
@@ -137,6 +156,21 @@ body {
 	height: 100%;
 	padding-top: 90px;
 	padding-bottom: 2%;
+}
+#random {
+	background-color: #d6d6d6;
+	border: none;
+	margin-left: 40%;
+	margin-right: 40%;
+	width: 20%;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: times;
+	border-radius: 10px;
+	margin-top: 5%;
+}
+#random:hover {
+	background-color: #c6c6c6;
 }
 .container {
 	background-color: white;
