@@ -88,17 +88,16 @@ a {
 
 <div id="main">
 
-
-
-<div id="title">Unit 6: Principles of Programming</div>
+<div id="title">German</div>
 
 <hr id="titlebreak">
 
-<a class="topiclink" href="computing-unit-6-topic-1.html"><div class="topic" id="topic1"><div class="text">High Level and Low Level Languages</div></div></a>
-<div class="topic" id="topic2"><div class="text"></div></div>
-<div class="topic" id="topic3"><div class="text"></div></div>
-<div class="topic" id="topic4"><div class="text"></div></div>
-<div class="topic" id="topic5"><div class="text"></div></div>
+<div class="category" id="topics"><div class="text">Topics</div></div>
+<div class="category" id="grammar"><div class="text">Grammar</div></div>
+<div class="category" id="vocab"><div class="text">Vocabulary</div></div>
+<div class="category" id="topic4"><div class="text"></div></div>
+<div class="category" id="topic5"><div class="text"></div></div>
+
 
 </div>
 
@@ -106,8 +105,9 @@ a {
 </div>
 
 <style type="text/css">
+
 body {
-	background-image: linear-gradient(#2d88c8, #013254, #00101c);
+	background-image: linear-gradient(#ef5f54, #832620, #3c0400);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -119,6 +119,8 @@ body {
 	width: 60%;
 	margin: auto;
 	height: 100%;
+	font-family: helvetica;
+	padding-bottom: 2%;
 }
 #title {
 	padding-top: 80px;
@@ -135,7 +137,7 @@ body {
 }
 .text {
 	opacity: 0.8;
-	background-color: #182b61;
+	background-color: #970900;
 	font-family: georgia;
 	height: 100%;
 	margin-top: -40px;
@@ -144,10 +146,13 @@ body {
 	border-radius: 40px;
 	font-size: 1.2em;
 }
-#topic1 {
-	visibility: visible;
+#topic4 {
+	visibility: hidden;
 }
-.topic {
+#topic5 {
+	visibility: hidden;
+}
+.category {
 	margin-top: 50px;
 	height: 70px;
 	text-align: center;
@@ -160,18 +165,17 @@ body {
 	border-radius: 40px;
 	transition: .5s ease;
 	opacity: 0.8;
-	visibility: hidden;
 }
-.topic:hover {
+.category:hover {
 	opacity: 1;
 }
-.topic:hover .text {
+.category:hover .text {
 	opacity: 1;
 }
-
-.topiclink {
+.categorylink {
 	text-decoration: none;
 }
+
 #footer {
 	height: 80px;
 	background-color: white;
