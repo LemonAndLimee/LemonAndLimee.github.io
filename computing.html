@@ -11,20 +11,20 @@
  <div class="dropdown">
   <button class="dropbtn">Subjects</button>
   <div class="dropdown-content">
-    <a href="#">Maths</a>
-    <a href="#">English</a>
-	<a href="biology.html">Biology</a>
-    <a href="#">Chemistry</a>
-    <a href="#">Physics</a>
-    <a href="#">History</a>
+    <a href="building.html">Maths</a>
+    <a href="building.html">English</a>
+    <a href="biology.html">Biology</a>
+    <a href="building.html">Chemistry</a>
+    <a href="building.html">Physics</a>
+    <a href="building.html">History</a>
     <a href="german.html">German</a>
     <a href="computing.html">Computer Science</a>
-    <a href="#">Art</a>
+    <a href="building.html">Art</a>
   </div>
 </div> 
 </div>
-<div class="headertitle">Exams</div>
-<div class="headertitle">Revision Timetable</div>
+<a href="building.html"><div class="headertitle">Exams</div></a>
+<a href="building.html"><div class="headertitle">Revision Timetable</div></a>
 </div>
 
 <style type="text/css">
@@ -53,18 +53,11 @@ a {
 }
 .dropbtn {
 	background-color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    font-family: helvetica;
-}
-.dropbtn {
-	background-color: white;
-    padding: none;
     font-size: 16px;
     border: none;
     font-family: helvetica;
     height: 100%;
+    padding-bottom: 20%;
 }
 .dropdown {
     position: relative;
@@ -77,7 +70,12 @@ a {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 5%;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 .dropdown-content a:hover {background-color: #ddd;}
 

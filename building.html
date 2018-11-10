@@ -89,16 +89,22 @@ a {
 
 <div id="main">
 
-<div id="title">Infection and Response</div>
 
+
+<div id="title">Sorry, the page you're looking for is not currently available. 
 <hr id="titlebreak">
+It may be undergoing construction or bug fixes. 
+<hr id="titlebreak">
+Thank you for your patience.</div>
 
-<a class="categorylink" href="biology-infection-diseases.html"><div class="category" id="topic1"><div class="text">Communicable Diseases</div></div></a>
-<div class="category" id="topic2"><div class="text">Human Defence Systems</div></div>
-<div class="category" id="topic3"><div class="text"></div></div>
-<div class="category" id="topic4"><div class="text"></div></div>
-<div class="category" id="topic5"><div class="text"></div></div>
 
+
+
+<div class="topic" id="topic1"><div class="text"></div></div>
+<div class="topic" id="topic2"><div class="text"></div></div>
+<div class="topic" id="topic3"><div class="text"></div></div>
+<div class="topic" id="topic4"><div class="text"></div></div>
+<div class="topic" id="topic5"><div class="text"></div></div>
 
 </div>
 
@@ -106,13 +112,12 @@ a {
 </div>
 
 <style type="text/css">
-
 body {
-	background-image: linear-gradient(#89ff89, #529752, #1e371e);
+	background-image: url("https://ae01.alicdn.com/kf/HTB1GEgcNVXXXXbgXXXXq6xXFXXXv/Artist-Coloured-Pencils-lapis-de-cor-profissional-72-Pencil-Crayons-Colour-Pencil-Set-Children-Color-lapis.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-color: #bababa;
+	background-color: black;
 	margin: 0;
 }
 #main {
@@ -120,25 +125,24 @@ body {
 	width: 60%;
 	margin: auto;
 	height: 100%;
-	font-family: helvetica;
-	padding-bottom: 2%;
 }
 #title {
-	padding-top: 80px;
+	padding-top: 20%;
 	margin: auto;
 	font-weight: bold;
 	text-align: center;
 	color: black;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: times;
 	padding-bottom: 10px;
+	width: 50%;
 }
 #titlebreak {
 	width: 60%;
 }
 .text {
 	opacity: 0.8;
-	background-color: #196f19;
+	background-color: #182b61;
 	font-family: georgia;
 	height: 100%;
 	margin-top: -40px;
@@ -147,13 +151,8 @@ body {
 	border-radius: 40px;
 	font-size: 1.2em;
 }
-#topic1 {
-	visibility: visible;
-}
-#topic2 {
-	visibility: visible;
-}
-.category {
+
+.topic {
 	margin-top: 50px;
 	height: 70px;
 	text-align: center;
@@ -168,16 +167,16 @@ body {
 	opacity: 0.8;
 	visibility: hidden;
 }
-.category:hover {
+.topic:hover {
 	opacity: 1;
 }
-.category:hover .text {
+.topic:hover .text {
 	opacity: 1;
-}
-.categorylink {
-	text-decoration: none;
 }
 
+.topiclink {
+	text-decoration: none;
+}
 #footer {
 	height: 80px;
 	background-color: white;

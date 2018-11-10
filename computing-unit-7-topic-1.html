@@ -11,20 +11,20 @@
  <div class="dropdown">
   <button class="dropbtn">Subjects</button>
   <div class="dropdown-content">
-    <a href="#">Maths</a>
-    <a href="#">English</a>
-	<a href="biology.html">Biology</a>
-    <a href="#">Chemistry</a>
-    <a href="#">Physics</a>
-    <a href="#">History</a>
+    <a href="building.html">Maths</a>
+    <a href="building.html">English</a>
+    <a href="biology.html">Biology</a>
+    <a href="building.html">Chemistry</a>
+    <a href="building.html">Physics</a>
+    <a href="building.html">History</a>
     <a href="german.html">German</a>
     <a href="computing.html">Computer Science</a>
-    <a href="#">Art</a>
+    <a href="building.html">Art</a>
   </div>
 </div> 
 </div>
-<div class="headertitle">Exams</div>
-<div class="headertitle">Revision Timetable</div>
+<a href="building.html"><div class="headertitle">Exams</div></a>
+<a href="building.html"><div class="headertitle">Revision Timetable</div></a>
 </div>
 
 <style type="text/css">
@@ -53,11 +53,11 @@ a {
 }
 .dropbtn {
 	background-color: white;
-    padding: none;
     font-size: 16px;
     border: none;
     font-family: helvetica;
     height: 100%;
+    padding-bottom: 20%;
 }
 .dropdown {
     position: relative;
@@ -70,7 +70,6 @@ a {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 5%;
 }
 .dropdown-content a {
     color: black;
@@ -145,6 +144,18 @@ Alternatively a variable watch may be set, which will interrupt the program flow
 <h2>Error Diagnostics</h2>
 <p><span>Used when a program fails</span> to compile or to run.
 Error messages are <span>displayed to help the programmer diagnose what has gone wrong.</span></p>
+<br><br><br><br>
+
+<div id="examquestions">
+<div id="qtitle">Test yourself:</div>
+</br>
+<li>What does IDE stand for?</li>
+<li>Name and describe four features of the IDE.</li>
+</div>
+<br><br>
+
+</div>
+
 </div>
 
 </div>
@@ -157,6 +168,22 @@ Error messages are <span>displayed to help the programmer diagnose what has gone
 </script>
 
 <style type="text/css">
+#examquestions {
+	border: 2px solid #0582bd;
+	border-radius: 10px;
+	width: 80%;
+	margin: auto;
+	padding: 1% 1% 1% 1%;
+	color: #0582bd;
+}
+#qtitle {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+}
+li {
+	margin-left: 5%;
+}
 body {
 	background-image: linear-gradient(#2d88c8, #013254, #00101c);
 	background-repeat: no-repeat;
