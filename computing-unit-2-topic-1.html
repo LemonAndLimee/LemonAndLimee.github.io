@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>GCSE Revision</title>
+
+<div id="header">
+<div id="webtitle">GCSE Revision</div>
+<a href="index.html"><div class="headertitle">Home</div></a>
+<div class="headertitle">
+ <div class="dropdown">
+  <button class="dropbtn">Subjects</button>
+  <div class="dropdown-content">
+    <a href="building.html">Maths</a>
+    <a href="building.html">English</a>
+    <a href="biology.html">Biology</a>
+    <a href="building.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="building.html">History</a>
+    <a href="german.html">German</a>
+    <a href="computing.html">Computer Science</a>
+    <a href="building.html">Art</a>
+  </div>
+</div> 
+</div>
+<a href="building.html"><div class="headertitle">Exams</div></a>
+<a href="building.html"><div class="headertitle">Revision Timetable</div></a>
+</div>
+
+<style type="text/css">
+#header {
+	height: 50px;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+#webtitle {
+	font-size: 1.2em;
+	padding-top: 15px;
+	padding-left: 10%;
+	font-weight: bold;
+	display: inline-block;
+}
+a {
+	color: black;
+}
+.headertitle {
+	padding-left: 3%;
+	display: inline-block;
+	font-family: helvetica;
+	color: black;
+}
+.dropbtn {
+	background-color: white;
+    font-size: 16px;
+    border: none;
+    font-family: helvetica;
+    height: 100%;
+    padding-bottom: 20%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+
+<div id="title">Boolean Algebra</div>
+
+<hr id="titlebreak">
+
+<a href="computing-unit-2-topic-1.html"><div class="subtitle" id="revision">Revision</div></a>
+<a href="#"><div class="subtitle" id="quiz">Quiz</div></a>
+
+<div id="content">
+
+<h2>Rules</h2>
+<p><span class="rule">A&#x305; = NOT A</span></p>
+<p><span class="rule">A.B = A AND B</span></p>
+<p><span class="rule">A+B = A OR B</span></p>
+<p><span class="rule">A&#x2295;B = A XOR B</span></p>
+
+</br></br>
+
+<h2>Worked Example 1</h2>
+
+<div class="container"><div class="cont-title">Rules</div>
+<br>
+<li>P.1 = P</li>
+<br>
+<li>P.Q + P.R = P.(Q+R)</li>
+<br>
+<li>P+P&#x305; = 1</li></div>
+
+<div class="container"><div class="cont-title">Expression</div>
+<br>
+<li>X = A.B + A.B&#x305;</li>
+<br>
+<li class="invisible">P.Q + P.R = P.(Q+R)</li>
+<br>
+<li class="invisible">P+P&#x305; = 1</li></div>
+
+<br><br>
+
+<div class="stage">
+<h2>Step 1</h2>
+<li><span>Find the rule that looks most similar to the expression (Rule 2)</span></li>
+<li><span>Use it to simplify the expression by substituting it into the rule</span></li>
+<p>P.Q + P.R = P.(Q+R)</p>
+<p>P = A, Q = B, R = B&#x305;</p>
+<p><span class="rule">X = A.(B+B&#x305;)</span></p>
+</div>
+
+<br><br>
+
+<div class="stage">
+<h2>Step 2</h2>
+<li><span>Find the next closest rule (Rule 3)</span></li>
+<li><span>Repeat the process</span></li>
+<p>P+P&#x305; = 1</p>
+<p>P = B, P&#x305; = B&#x305;</p>
+<p><span class="rule">X = A.1</span></p>
+</div>
+
+<br><br>
+
+<div class="stage">
+<h2>Step 3</h2>
+<li><span>Use the final rule to simplify it further</span></li>
+<p>P.1 = P</p>
+<p>P = A</p>
+<p><span class="rule">X = A</span></p>
+</div>
+
+
+
+
+
+
+
+
+</br></br></br></br>
+
+<h2>Worked Example 2</h2>
+
+<div class="container"><div class="cont-title">Rules</div>
+<br>
+<li>P.P&#x305; = 0</li>
+<br>
+<li>(P+Q).R = (P.R) + (Q.R)</li>
+<br>
+<li>P+0 = P</li></div>
+
+<div class="container"><div class="cont-title">Expression</div>
+<br>
+<li>X = (A+B).A&#x305;</li>
+<br>
+<li class="invisible">P.Q + P.R = P.(Q+R)</li>
+<br>
+<li class="invisible">P+P&#x305; = 1</li></div>
+
+<br><br>
+
+<div class="stage">
+<h2>Step 1</h2>
+<p>(P+Q).R = (P.R) + (Q.R)</p>
+<p>P = A, Q = B, R = A&#x305;</p>
+<p><span class="rule">X = (A.A&#x305;) + (B.A&#x305;)</span></p>
+</div>
+
+<br><br>
+
+<div class="stage">
+<h2>Step 2</h2>
+<p>P.P&#x305; = 0</p>
+<p>P = A, P&#x305; = A&#x305;</p>
+<p><span class="rule">X = 0 + (B.A&#x305;)</span></p>
+</div>
+
+<br><br>
+
+<div class="stage">
+<h2>Step 3</h2>
+<p>P+0 = P</p>
+<p>P = B.A&#x305;</p>
+<p><span class="rule">X = B.A&#x305;</span></p>
+</div>
+
+
+</div>
+</div>
+
+<div id="footer">
+</div>
+
+<script type="text/javascript">
+
+</script>
+
+<style type="text/css">
+.invisible {
+	visibility: hidden;
+}
+.cont-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+	background-color: #266285;
+	color: white;
+	padding: 1% 1% 1% 1%;
+}
+.container {
+	border: 2px solid #266285;
+	border-radius: 10px;
+	padding: 0px 0px 1% 0px;
+	color: #266285;
+	width: 40%;
+	display: inline-block;
+	margin-right: 5%;
+}
+.stage {
+	margin-left: 5%;
+}
+.rule {
+	background-color: #57bbf5;
+}
+#examquestions {
+	border: 2px solid #0582bd;
+	border-radius: 10px;
+	margin: auto;
+	padding: 0px 0px 1% 0px;
+	color: #0582bd;
+}
+#qtitle {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+	background-color: #0582bd;
+	color: white;
+	padding: 1% 1% 1% 1%;
+}
+.stage {
+	margin-left: 5%;
+}
+body {
+	background-image: linear-gradient(#2d88c8, #013254, #00101c);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #bababa;
+	margin: 0;
+}
+#main {
+	background-color: #ececec;
+	width: 60%;
+	margin: auto;
+	height: 100%;
+	padding-bottom: 1%;
+}
+#title {
+	padding-top: 80px;
+	margin: auto;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	font-family: times;
+	padding-bottom: 10px;
+}
+#titlebreak {
+	width: 60%;
+}
+li {
+	margin-left: 5%;
+	font-size: 1.2em;
+}
+a {
+	text-decoration: none;
+}
+#content {
+	width: 95%;
+	background-color: #ececec;
+	height: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	padding-top: 5px;
+	padding-left: 15px;	
+	font-size: 1.2em;
+}
+h2 {
+	text-decoration: underline;
+}
+h3 {
+	text-decoration: underline;
+}
+p {
+	font-family: cambria, arial;
+	font-size: 1.2em;
+}
+span {
+	background-color: #a8ddfc;
+	border-radius: 5px;
+}
+img {
+	margin-left: 8%;
+	margin-bottom: 100px;
+}
+.subtitle {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: auto;
+	width: 100px;
+	border-radius: 10px;
+}
+#revision {
+	background-color: #d6d6d6;
+}
+#footer {
+	height: 80px;
+	background-color: white;
+	width: 100%;
+}
+</style>
+</body>
+
+</html>
