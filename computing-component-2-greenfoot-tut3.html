@@ -89,22 +89,79 @@ a {
 
 <div id="main">
 
-<div id="title">Greenfoot</div>
+<div id="title">Greenfoot: How to add random movement</div>
 
 <hr id="titlebreak">
 
-<a class="unitlink" href="computing-component-2-greenfoot-tut1.html"><div class="unit" id="tut1"><div class="text">How to add an actor</div></div></a>
-<a class="unitlink" href="computing-component-2-greenfoot-tut2.html"><div class="unit" id="tut2"><div class="text">How to add actor movement with arrow keys</div></div></a>
-<a class="unitlink" href="computing-component-2-greenfoot-tut3.html"><div class="unit" id="tut3"><div class="text">How to add random movement</div></div></a>
-<a class="unitlink" href="computing-component-2-greenfoot-tut4.html"><div class="unit" id="tut4"><div class="text">How to add an object to collect</div></div></a>
+<div id="content">
+
+<img src="https://www.greenfoot.org/images/tutorials/crab-1/class-popup-Crab-open-editor.png" class="pic2"/>
+<p>Right-click on the actor you want to move, and select "Open editor".</p>
+
+</br></br>
+
+<img src="greenfootpic6.png"/>
+<p>In between the curly brackets of "public void act() {}", type out this code. This means that every four steps, there is a 1 in 10 chance of the actor changing direction.</p>
 
 </div>
-	<div></div>
+</div>
+
 <div id="footer">
 </div>
 
-<style type="text/css">
+<script type="text/javascript">
 
+</script>
+
+<style type="text/css">
+.pic2 {
+	width: 20%;
+	margin-left: 40%;
+}
+.invisible {
+	visibility: hidden;
+}
+.cont-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+	background-color: #266285;
+	color: white;
+	padding: 1% 1% 1% 1%;
+}
+.container {
+	border: 2px solid #266285;
+	border-radius: 10px;
+	padding: 0px 0px 1% 0px;
+	color: #266285;
+	width: 40%;
+	display: inline-block;
+	margin-right: 5%;
+}
+.stage {
+	margin-left: 5%;
+}
+.rule {
+	background-color: #57bbf5;
+}
+#examquestions {
+	border: 2px solid #0582bd;
+	border-radius: 10px;
+	margin: auto;
+	padding: 0px 0px 1% 0px;
+	color: #0582bd;
+}
+#qtitle {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+	background-color: #0582bd;
+	color: white;
+	padding: 1% 1% 1% 1%;
+}
+.stage {
+	margin-left: 5%;
+}
 body {
 	background-image: linear-gradient(#2d88c8, #013254, #00101c);
 	background-repeat: no-repeat;
@@ -118,8 +175,7 @@ body {
 	width: 60%;
 	margin: auto;
 	height: 100%;
-	font-family: helvetica;
-	padding-bottom: 2%;
+	padding-bottom: 1%;
 }
 #title {
 	padding-top: 80px;
@@ -134,41 +190,57 @@ body {
 #titlebreak {
 	width: 60%;
 }
-.text {
-	opacity: 0.8;
-	background-color: #182b61;
-	font-family: georgia;
-	height: 100%;
-	margin-top: -40px;
-	padding-top: 40px;
-	width: 100%;
-	border-radius: 40px;
+li {
+	margin-left: 5%;
 	font-size: 1.2em;
 }
-.unit {
-	margin-top: 50px;
-	height: 70px;
-	text-align: center;
-	width: 50%;
-	margin-left: 25%;
-	padding-top: 40px;
-	color: white;
-	font-family: georgia;
-	font-weight: bold;
-	border-radius: 40px;
-	transition: .5s ease;
-	opacity: 0.8;
-}
-.unit:hover {
-	opacity: 1;
-}
-.unit:hover .text {
-	opacity: 1;
-}
-.unitlink {
+a {
 	text-decoration: none;
 }
-
+#content {
+	width: 95%;
+	background-color: #ececec;
+	height: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	padding-top: 5px;
+	padding-left: 15px;	
+	font-size: 1.2em;
+}
+h2 {
+	text-decoration: underline;
+}
+h3 {
+	text-decoration: underline;
+}
+p {
+	font-family: cambria, arial;
+	font-size: 1.2em;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+}
+span {
+	background-color: #a8ddfc;
+	border-radius: 5px;
+}
+img {
+	width: 60%;
+	margin-left: 20%;
+}
+.subtitle {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: auto;
+	width: 100px;
+	border-radius: 10px;
+}
+#revision {
+	background-color: #d6d6d6;
+}
 #footer {
 	height: 80px;
 	background-color: white;
