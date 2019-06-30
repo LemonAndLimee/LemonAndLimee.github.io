@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto Light"), local("Roboto-Light"), url("https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+	background-color: #f1d5d5;
+}
+head {
+	background-color: #f1d5d5;
+}
+html {
+	background-color: #f1d5d5;
+}
+
+* {
+	background-color: white;
+}
+
+#content {
+	height: 100%;
+	width: 90%;
+	background-color: white;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 150px;
+	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
+}
+
+#header {
+	background-color: white;
+	height: 650px;
+	width: 70%;
+	margin: auto;
+	vertical-align: middle;
+}
+
+.container {
+	font-family: Roboto-Light;
+	font-size: 2em;
+	text-decoration: none;
+	color: #3d3d3d;
+	display: block;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+a {
+	text-decoration: none;
+}
+

@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto Light"), local("Roboto-Light"), url("https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+	background-color: #dbf8f8;
+}
+head {
+	background-color: #dbf8f8;
+}
+html {
+	background-color: #dbf8f8;
+}
+
+* {
+	background-color: white;
+}
+
+#content {
+	height: 100%;
+	width: 90%;
+	background-color: white;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 150px;
+	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
+}
+
+#header {
+	background-color: white;
+	height: 300px;
+	width: 70%;
+	margin: auto;
+	vertical-align: middle;
+}
+
+
+#intro {
+	width: 50%;
+	display: block;
+	background-color: white;
+	font-size: 1.4em;
+	font-family: Roboto-Light;
+	color: #888888;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+	text-align: center;
+}
+
+#introHeader {
+	font-weight: bold;
+	background-color: white;
+	color: #404040;
+}
+
+#section2 {
+	display: block;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin: auto;	
+}
+
+#grid {
+	width: 90%;
+	margin: auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.3%; /* IE10 */
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 16px;
+}
+
+.column img {
+  margin-top: 35px;
+  vertical-align: middle;
+  width: 100%;
+  box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
