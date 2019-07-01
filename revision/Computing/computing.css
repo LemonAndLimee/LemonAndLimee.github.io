@@ -14,13 +14,10 @@
 
 
 html {
-	background-color: #dcf9f9;
-}
-head {
-	background-color: #dcf9f9;
+	background-image: linear-gradient(#bae2f3, #528fa9);
 }
 body {
-	background-color: #dcf9f9;
+	background-image: linear-gradient(#bae2f3, #528fa9);
 }
 
 * {
