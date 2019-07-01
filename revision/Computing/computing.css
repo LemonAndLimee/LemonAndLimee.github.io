@@ -14,14 +14,13 @@
 
 
 html {
-	background-image: url("https://lemonandlimee.github.io/Portfolio/Photography/buttons1.png");
-	background-size: cover;
-	background-position: center; /* Center the image */
-  	background-repeat: no-repeat;
+	background-color: #dcf9f9;
+}
+head {
+	background-color: #dcf9f9;
 }
 body {
-	width: 85%;
-	margin: auto;
+	background-color: #dcf9f9;
 }
 
 * {
@@ -29,12 +28,14 @@ body {
 }
 
 #content {
-	height: 550px;
-	width: 100%;
+	height: 100%;
+	width: 65%;
 	margin: auto;
 	margin-top: 2%;
 	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
-	padding-top: 13%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	margin-bottom: 2%;
 }
 #title {
 	display: block;
@@ -45,42 +46,30 @@ body {
 	font-weight: bold;
 }
 #header {
-	width: 30%;
+	width: 35%;
 	margin: auto;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 .link {
 	color: #b4b4b4;
 	font-family: Roboto-Light;
 	font-weight: bold;
-	display: inline-block;
-	width: 20%;
-	margin-left: 4%;
-	text-align: center;
-	vertical-align: middle;
-	margin-bottom: 20px;
-	font-size: 1.2em;
+	display: block;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
 .link:hover {
 	color: #a0a0a0;
 }
-
-.button {
-	background-color: #2a6a6c;
-	border: none;
+.unit {
 	color: white;
+	background-color: #3a809f;
 	font-family: Roboto-Light;
 	font-weight: bold;
-	margin: auto;
 	display: block;
-	height: 40px;
-	width: 150px;
-	border-radius: 10px;
-	font-size: 1em;
-	margin-top: 10px;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	padding: 5px 5px 5px 5px;
 	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
-	transition: 0.6s ease;
-}
-.button:hover {
-	background-color: #1f5051;
 }
