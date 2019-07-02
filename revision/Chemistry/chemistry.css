@@ -14,10 +14,10 @@
 
 
 html {
-	background-image: linear-gradient(#e4baf3, #9852a9);
+	background-image: linear-gradient(#f3baba, #a95252);
 }
 body {
-	background-image: linear-gradient(#e4baf3, #9852a9);
+	background-image: linear-gradient(#f3baba, #a95252);
 }
 
 * {
@@ -61,7 +61,7 @@ body {
 }
 .unit {
 	color: white;
-	background-color: #7f3a9f;
+	background-color: #9f3a3a;
 	font-family: Roboto-Light;
 	font-weight: bold;
 	display: block;
