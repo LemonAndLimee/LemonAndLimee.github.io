@@ -14,10 +14,10 @@
 
 
 html {
-	background-image: linear-gradient(#bac1f3, #525ba9);
+	background-image: linear-gradient(#bae2f3, #528fa9);
 }
 body {
-	background-image: linear-gradient(#bac1f3, #525ba9);
+	background-image: linear-gradient(#bae2f3, #528fa9);
 }
 
 * {
@@ -42,35 +42,41 @@ body {
 	font-family: Roboto-Light;
 	font-weight: bold;
 }
-#header {
-	width: 35%;
+#body {
+	width: 80%;
 	margin: auto;
 	margin-top: 60px;
 }
-.link {
-	color: #b4b4b4;
+.header {
+	text-align: left;
+	font-size: 1.5em;
+	color: #3d3d3d;
 	font-family: Roboto-Light;
 	font-weight: bold;
-	display: block;
-	font-size: 1.1em;
-	margin-bottom: 10px;
-	margin-left: 10px;
+	text-decoration: underline;
 }
-.link:hover {
-	color: #a0a0a0;
-}
-a {
-	text-decoration: none;
-}
-.unit {
-	color: white;
-	background-color: #3a469f;
+.subheader {
+	text-align: left;
+	font-size: 1.4em;
+	color: #3d3d3d;
 	font-family: Roboto-Light;
 	font-weight: bold;
+	text-decoration: underline;
+}
+.rule {
+	text-align: left;
+	font-size: 1.3em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
 	display: block;
-	font-size: 1.2em;
-	margin-bottom: 20px;
+	margin-top: 8px;
+}
+.box {
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
 	padding: 5px 5px 5px 5px;
-	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
+	margin-right: 20px;
+	background-color: #3f9bc4;
 }
-

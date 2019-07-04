@@ -59,6 +59,9 @@ body {
 .link:hover {
 	color: #a0a0a0;
 }
+a {
+	text-decoration: none;
+}
 .unit {
 	color: white;
 	background-color: #9f3a3a;

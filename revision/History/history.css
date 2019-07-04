@@ -47,6 +47,9 @@ body {
 	margin: auto;
 	margin-top: 60px;
 }
+a {
+	text-decoration: none;
+}
 .link {
 	color: #b4b4b4;
 	font-family: Roboto-Light;

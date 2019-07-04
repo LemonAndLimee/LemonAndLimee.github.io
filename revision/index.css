@@ -64,7 +64,9 @@ body {
 .link:hover {
 	color: #a0a0a0;
 }
-
+a {
+	text-decoration: none;
+}
 
 .button {
 	background-color: #2a6a6c;
