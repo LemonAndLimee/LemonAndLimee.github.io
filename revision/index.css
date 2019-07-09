@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto Light"), local("Roboto-Light"), url("https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Rubrik";
+  src: url("https://shop.ee.co.uk/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.woff") format("woff"), url("/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
+html {
+	background-image: url("https://lemonandlimee.github.io/Portfolio/Photography/buttons1.png");
+	background-size: cover;
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat;
+}
+body {
+	width: 85%;
+	margin: auto;
+}
+
+* {
+	background-color: white;
+}
+
+#content {
+	height: 550px;
+	width: 100%;
+	margin: auto;
+	margin-top: 2%;
+	box-shadow: 0px 0px 20px 1px rgba(120,120,120,1);
+	padding-top: 13%;
+}
+#title {
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
+	font-weight: bold;
+}
+#header {
+	width: 30%;
+	margin: auto;
+	margin-top: 40px;
+}
+.link {
+	color: #b4b4b4;
+	font-family: Roboto-Light;
+	font-weight: bold;
+	display: inline-block;
+	width: 20%;
+	margin-left: 4%;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+.link:hover {
+	color: #a0a0a0;
+}
+a {
+	text-decoration: none;
+}
+
+.button {
+	background-color: #2a6a6c;
+	border: none;
+	color: white;
+	font-family: Roboto-Light;
+	font-weight: bold;
+	margin: auto;
+	display: block;
+	height: 40px;
+	width: 150px;
+	border-radius: 10px;
+	font-size: 1em;
+	margin-top: 10px;
+	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
+	transition: 0.6s ease;
+}
+.button:hover {
+	background-color: #1f5051;
+}

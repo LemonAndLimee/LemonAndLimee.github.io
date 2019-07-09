@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto Light"), local("Roboto-Light"), url("https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Rubrik";
+  src: url("https://shop.ee.co.uk/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.woff") format("woff"), url("/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
+html {
+	background-image: linear-gradient(#f3baba, #a95252);
+}
+body {
+	background-image: linear-gradient(#f3baba, #a95252);
+}
+
+* {
+	background-color: white;
+}
+
+#content {
+	height: 100%;
+	width: 65%;
+	margin: auto;
+	margin-top: 2%;
+	box-shadow: 0px 0px 20px 1px rgba(120,120,120,1);
+	padding-top: 4%;
+	padding-bottom: 4%;
+	margin-bottom: 2%;
+}
+#title {
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
+	font-weight: bold;
+}
+#header {
+	width: 35%;
+	margin: auto;
+	margin-top: 60px;
+}
+.link {
+	color: #b4b4b4;
+	font-family: Roboto-Light;
+	font-weight: bold;
+	display: block;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.link:hover {
+	color: #a0a0a0;
+}
+a {
+	text-decoration: none;
+}
+.unit {
+	color: white;
+	background-color: #9f3a3a;
+	font-family: Roboto-Light;
+	font-weight: bold;
+	display: block;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
+}
