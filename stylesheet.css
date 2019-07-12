@@ -16,12 +16,15 @@
 
 body {
 	background-color: #f1d5d5;
+	width: 90%;
+	margin: auto;
 }
-head {
-	background-color: #f1d5d5;
-}
+
 html {
-	background-color: #f1d5d5;
+	background-image: url("https://lemonandlimee.github.io/Portfolio/Photography/rocks4.png");
+	background-size: cover;
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat;
 }
 
 * {
@@ -30,13 +33,12 @@ html {
 
 #content {
 	height: 100%;
-	width: 90%;
 	background-color: white;
 	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	padding-top: 150px;
-	box-shadow: 0px 0px 20px 1px rgba(176,176,176,1);
+	box-shadow: 0px 0px 20px 1px rgba(100,100,100,1);
 }
 
 #header {
