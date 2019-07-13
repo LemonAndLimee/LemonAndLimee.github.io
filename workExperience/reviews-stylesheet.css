@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "Rubrik";
+  src: url("https://shop.ee.co.uk/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.woff") format("woff"), url("/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
+html {
+	background-color: #f2f2ed;
+}
+head {
+	background-color: #f2f2ed;
+}
+body {
+	background-color: #f2f2ed;
+}
+
+
+.tab {
+	background-color: white;
+	border: 1px solid #767575;
+	border-radius: 5px;
+	font-family: Rubrik;
+	color: #007b85;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: 0.6s ease;
+	vertical-align: top;
+	display: inline-block;
+	width: 21%;
+	margin-left: 3%;
+	height: 50px;
+}
+
+.tab:hover {
+	background-color: #e3e3e3;
+}
+
+#activeTab {
+	background-color: #767575;
+	color: white;
+}
+
+#tabContainer {
+	width: 570px;
+	margin: auto;
+	margin-top: 2%;
+}
+
+
+#container {
+	background-color: white;
+	width: 90%;
+	margin: auto;
+	margin-top: 2%;
+	height: 100%;
+	
+}
+
+#title {
+	background-color: white;
+	font-family: Rubrik;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #686868;
+	padding: 40px 20px 20px 20px;
+	text-align: center;
+}
+
+.container {
+	display: block;
+	width: 90%;
+	padding: 20px 20px 20px 20px;
+	background-color: white;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.header {
+	font-family: Rubrik;
+	font-weight: bold;
+	color: #007b85;
+	background-color: white;
+	font-size: 1.2rem;
+	display: block;
+	text-align: center;
+}
+
+.text {
+	font-family: Rubrik;
+	color: #8f8f8f;
+	background-color: white;
+	font-size: 1.1rem;
+}
+
+.link {
+	background-color: white;
+	font-weight: bold;
+	text-decoration: none;
+	color: #007b85;
+}
+
+.highlight {
+	color: #686868;
+	font-weight: bold;
+	background-color: white;
+}
+
+#sidebar {
+	display: inline-block;
+	width: 30%;
+	padding: 20px 20px 20px 20px;
+	background-color: white;
+	margin-left: 5%;
+	margin-top: 2%;
+	height: 80%;
+	vertical-align: top;
+}
+
+#subContainer {
+	display: inline-block;
+	width: 47%;
+
+	background-color: white;
+	margin-left: 5%;
+	margin-top: 2%;
+	height: 80%;
+	vertical-align: top;
+}
+
+svg {
+	height: 25px;
+	background-color: white;
+	fill: #ffb924;
+	stroke: #ffb924;
+}
+
+.star {
+	height: 45px;
+}
+
+#stars {
+	background-color: white;
+	display: block;
+	margin: auto;
+	margin-top: 10%;
+	width: 150px;
+	vertical-align: top;
+}
+
+#rating {
+	background-color: white;
+	font-family: Rubrik;
+	color: #686868;
+	font-size: 1.1rem;
+	display: block;
+	text-align: center;
+}
+
+#count {
+	background-color: white;
+	font-family: Rubrik;
+	color: #8f8f8f;
+	font-size: 1.1rem;
+	display: block;
+	text-align: center;
+}
+
+.reviewTitle {
+	background-color: white;
+	font-family: Rubrik;
+	color: #007b85;
+	font-size: 1.3rem;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.user {
+	font-family: Rubrik;
+	color: #686868;
+	background-color: white;
+	font-size: 1.1rem;
+	font-weight:bold;
+}
+
+.right {
+	background-color: white;
+	float: right;
+	height: 80%;
+	vertical-align: top;
+	color: #ffb924;
+	font-size: 1.2rem;
+}
+
+
+.emptyStar {
+	fill: #dfdfdf;
+	stroke: #dfdfdf;
+}
+
+.breakdown {
+	display: block;
+	font-family: Rubrik;
+	color: #686868;
+	background-color: white;
+	font-size: 1.1rem;
+	font-weight:bold;
+	width: 87%;
+	margin: auto;
+}
+
+/* ipad/tablet */
+@media only screen and (max-width: 800px) {
+	#tabContainer {
+		width: 90%;
+	}
+	.tab {
+		font-size: 2.5vw;
+		height: 50px;
+		
+	}
+	
+	.breakdown {
+		width: 100%;
+		font-size: 0.9rem;
+	}
+	
+	
+	#subContainer {
+		padding: none;
+		margin-left: 0%;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	.text {
+		font-size: 0.9rem;
+	}
+	.reviewTitle {
+		font-size: 1rem;
+		
+	}
+	.user {
+		font-size: 0.9rem;
+	}
+	svg {
+		height: 15px;
+	}
+	.right {
+		font-size: 1rem;
+	}
+	
+}
+
+
+/* phone */
+@media only screen and (max-width: 600px) {
+	.tab {
+		display: block;
+		width: 100%;
+		height: 50px;
+		margin-top: 2%;
+		font-size: 1rem;
+		text-decoration: none;
+		margin-left: 0%;
+	}
+	#tabContainer {
+		width: 90%;
+		margin-top: 5%;
+	}
+	a {
+		text-decoration: none;
+	}
+	
+	#container {
+		padding-bottom: 5px;
+	}
+	
+	
+	#subContainer {
+		display: block;
+		width: 100%;
+	}
+	
+	.container {
+		width: 90%;
+		padding: 0px 0px 0px 0px;
+		margin-bottom: 20%;
+	}
+	
+	#sidebar {
+		width: 90%;
+		display: block;
+		padding: 0px 0px 0px 0px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	
+	.breakdown {
+		width: 70%;
+	}
+	
+	.text {
+		font-size: 0.8rem;
+	}
+	.reviewTitle {
+		font-size: 0.9rem;
+		
+	}
+	.user {
+		font-size: 0.8rem;
+	}
+	svg {
+		width: 80%;
+	}
+	.right {
+		font-size: 0.9rem;
+	}
+	
+	
+	.star {
+		width: 100%;
+	}
+
+}
