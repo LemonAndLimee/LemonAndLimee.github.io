@@ -25,6 +25,7 @@ html {
 	background-size: cover;
 	background-position: center; /* Center the image */
   	background-repeat: no-repeat;
+  	min-height: 100%;
 }
 
 * {
@@ -43,7 +44,7 @@ html {
 
 #header {
 	background-color: white;
-	height: 650px;
+	min-height: 650px;
 	width: 70%;
 	margin: auto;
 	vertical-align: middle;
@@ -63,3 +64,11 @@ a {
 	text-decoration: none;
 }
 
+@media only screen and (max-width: 700px) {
+	.container {
+		font-size: 5vw;
+	}
+	body {
+		width: 80%;
+	}
+}
