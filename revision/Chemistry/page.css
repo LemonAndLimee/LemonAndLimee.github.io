@@ -80,10 +80,7 @@ sub {
 	border-radius: 5px;
 }
 
-#atom {
-	width: 100%;
-}
-#atomicNumber {
+.image {
 	width: 100%;
 }
 .container {
@@ -98,11 +95,22 @@ sub {
 	vertical-align: middle;
 	width: 25%;
 }
+.leftBigger {
+	display: inline-block;
+	vertical-align: middle;
+	width: 35%;
+}
 .right {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 10%;
-	width: 60%;
+	width: 64%;
+}
+.rightBigger {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 6%;
+	width: 58%;
 }
 .point {
 	text-align: left;
