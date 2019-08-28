@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto Light"), local("Roboto-Light"), url("https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Rubrik";
+  src: url("https://shop.ee.co.uk/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.woff") format("woff"), url("/etc/designs/ee-common-2015/clientlibs_base/fonts/rubrik_regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
+html {
+	background-image: linear-gradient(#bac1f3, #525ba9);
+}
+body {
+	background-image: linear-gradient(#bac1f3, #525ba9);
+}
+
+* {
+	background-color: white;
+	color: #3d3d3d;
+}
+
+#content {
+	height: 100%;
+	width: 65%;
+	margin: auto;
+	margin-top: 2%;
+	box-shadow: 0px 0px 20px 1px rgba(120,120,120,1);
+	padding-top: 4%;
+	padding-bottom: 4%;
+	margin-bottom: 2%;
+}
+#title {
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
+	font-weight: bold;
+}
+#body {
+	width: 80%;
+	margin: auto;
+	margin-top: 60px;
+}
+.header {
+	text-align: left;
+	font-size: 1.5em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.subheader {
+	text-align: left;
+	font-size: 1.4em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+sub {
+	background-color: #f9c4c4;
+	border-radius: 5px;
+}
+
+
+.highlight1 {
+	background-color: #c4cef9;
+	border-radius: 5px;
+}
+.highlight2 {
+	background-color: #879df7;
+	border-radius: 5px;
+}
+
+
+.box {
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	padding: 10px 10px 10px 10px;
+	margin-right: 20px;
+	background-color: #c4caf9;
+	box-shadow: 0px 0px 20px 1px rgba(200,200,200,0.6);
+}
+
+
+.image {
+	width: 100%;
+}
+.container {
+	margin-top: 40px;
+}
+.subContainer {
+	display: block;
+	vertical-align: middle;
+}
+
+.rule {
+	text-align: left;
+	font-size: 1.4em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
+	display: block;
+	margin-top: 8px;
+}
+.example {
+	text-align: left;
+	font-size: 1.1em;
+	color: #3d3d3d;
+	font-family: Roboto-Light;
+	display: block;
+	margin-left: 10px;
+	margin-top: -15px;
+	font-style: italic;
+}
+
