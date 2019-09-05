@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>GCSE Revision</title>
+
+<div id="header">
+<div id="webtitle">GCSE Revision</div>
+<a href="index.html"><div class="headertitle">Home</div></a>
+<div class="headertitle">
+ <div class="dropdown">
+  <button class="dropbtn">Subjects</button>
+  <div class="dropdown-content">
+    <a href="building.html">Maths</a>
+    <a href="english.html">English</a>
+    <a href="biology.html">Biology</a>
+    <a href="building.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="building.html">History</a>
+    <a href="german.html">German</a>
+    <a href="computing.html">Computer Science</a>
+    <a href="building.html">Art</a>
+  </div>
+</div> 
+</div>
+<a href="building.html"><div class="headertitle">Exams</div></a>
+<a href="building.html"><div class="headertitle">Revision Timetable</div></a>
+</div>
+
+<style type="text/css">
+#header {
+	height: 50px;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+#webtitle {
+	font-size: 1.2em;
+	padding-top: 15px;
+	padding-left: 10%;
+	font-weight: bold;
+	display: inline-block;
+}
+a {
+	color: black;
+}
+.headertitle {
+	padding-left: 3%;
+	display: inline-block;
+	font-family: helvetica;
+	color: black;
+}
+.dropbtn {
+	background-color: white;
+    font-size: 16px;
+    border: none;
+    font-family: helvetica;
+    height: 100%;
+    padding-bottom: 20%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+
+<div id="title">Programming Errors</div>
+
+<hr id="titlebreak">
+
+<a href="computing-unit-8-topic-2.html"><div class="subtitle" id="revision">Revision</div></a>
+<a href="computing-unit-8-topic-2-quiz.html"><div class="subtitle" id="quiz">Quiz</div></a>
+
+<div id="content">
+
+<form name="quiz">
+<div class="question">
+<div class="qheader">The height of a dog is 33.34cm but 33cm is displayed. What type of error is this?</div></br>
+<input class="input" type="radio" name="question1" value="a"> Logical Error<br><br>
+<input class="input" type="radio" name="question1" value="b"> Rounding Error<br><br>
+<input class="input" type="radio" name="question1" value="c"> Truncation Error<br><br>
+<input class="input" type="radio" name="question1" value="d"> Syntax Error<br><br>
+</div>
+<div class="answer" id="answer1">The correct answer is B (Rounding Error)</div>
+</br>
+<div class="question">
+<div class="qheader">The user wants to read line 9 of a file that only has 6 lines. What type of error is this?</div></br>
+<input class="input" type="radio" name="question2" value="a"> Syntax Error<br><br>
+<input class="input" type="radio" name="question2" value="b"> Linking Error<br><br>
+<input class="input" type="radio" name="question2" value="c"> Rounding Error<br><br>
+<input class="input" type="radio" name="question2" value="d"> Runtime Error<br><br>
+</div>
+<div class="answer" id="answer2">The correct answer is D (Runtime Error)</div>
+</br>
+<div class="question">
+<div class="qheader">A command word (such as for or print) has been misspelled. What type of error is this?</div></br>
+<input class="input" type="radio" name="question3" value="a"> Truncation Error<br><br>
+<input class="input" type="radio" name="question3" value="b"> Logical Error<br><br>
+<input class="input" type="radio" name="question3" value="c"> Syntax Error<br><br>
+<input class="input" type="radio" name="question3" value="d"> Linking Error Error<br><br>
+</div>
+<div class="answer" id="answer3">The correct answer is C (Syntax Error)</div>
+</br>
+<div class="question">
+<div class="qheader">Which of these is an example of a logical error?</div></br>
+<input class="input" type="radio" name="question4" value="a"> The average speed is 120.34 but only 120 is displayed.<br><br>
+<input class="input" type="radio" name="question4" value="b"> (Total = Price – VAT) instead of (Total = Price + VAT)<br><br>
+<input class="input" type="radio" name="question4" value="c"> The misspelling of a word such as "print"<br><br>
+</div>
+<div class="answer" id="answer4">The correct answer is B ((Total = Price – VAT) instead of (Total = Price + VAT))</div>
+</br>
+<div class="question">
+<div class="qheader">What type of error is where when a compiler can’t find the sub procedure?</div></br>
+<input class="input" type="radio" name="question5" value="a"> Linking Error<br><br>
+<input class="input" type="radio" name="question5" value="b"> Syntax Error<br><br>
+<input class="input" type="radio" name="question5" value="c"> Runtime Error<br><br>
+<input class="input" type="radio" name="question5" value="d"> Truncation Error<br><br>
+</div>
+<div class="answer" id="answer5">The correct answer is A (Linking Error)</div>
+</br></br>
+<div id="score">(Please tick all the boxes)</div>
+</br>
+<button id="submit" type="button" onclick="grade(5)">Submit</button>
+</form>
+
+</div>
+
+</div>
+
+<div id="footer">
+</div>
+
+<script type="text/javascript">
+	
+	
+	var score = 0;
+	
+	
+	var radioanswers = ["b", "d", "c", "b", "a"];
+		
+	
+	var iscorrect = function(q, x) {
+		if ((document.querySelector("input[name='" + q +"']:checked").value) == radioanswers[x]) {
+			return true;		
+		}
+		else {
+			return false;
+		}
+	}
+	
+	function showanswers(x) {
+    	elements = document.getElementsByClassName(x);
+    	for (var i = 0; i < elements.length; i++) {
+        	elements[i].style.display = "inline-block";
+    	}
+	}
+	
+	function loop(qn) {
+		for (var i = 1; i <= qn; i++) {
+			mark('question' + i, i);
+		}
+	}
+	
+	function mark(question, x) {
+		document.getElementById('submit').style.display = "none";
+		showanswers('answer');
+		if (iscorrect(question, x-1) == true) {
+			score++;
+			document.getElementById('answer' + x).style.color = "green";
+		}
+		else {
+			document.getElementById('answer' + x).style.color = "red";
+		}
+		
+	}
+	
+	function grade(x) {
+		loop(x);
+		document.getElementById('score').style.fontSize = '1.5em';
+		document.getElementById('score').style.fontWeight = 'bold';
+		document.getElementById('score').style.marginTop = '8%';
+		document.getElementById('score').style.marginBottom = '5%';
+		document.getElementById('score').style.backgroundColor = '#d3d3d3';
+		var average = x/2;
+		if (score >= average) {
+			document.getElementById('score').style.color = 'green';
+			document.getElementById('score').innerHTML = "You achieved a score of " + score + " out of " + x + "!!";
+		}
+		else {
+			document.getElementById('score').style.color = 'red';
+			document.getElementById('score').innerHTML = "You achieved a score of " + score + " out of " + x + "! Try harder next time!";
+		}
+	}
+	
+
+</script>
+
+
+
+
+
+
+<style type="text/css">
+#score {
+	text-align: center;
+	font-size: 0.8em;
+}
+#submit {
+	background-color: #d6d6d6;
+	border: none;
+	margin-left: 45%;
+	margin-right: 45%;
+	width: 10%;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: times;
+	border-radius: 10px;
+	margin-bottom: 5%;
+}
+#submit:hover {
+	background-color: #c6c6c6;
+}
+.answer {
+	font-size: 1em;
+	margin-top: 1%;
+	margin-bottom: 3%;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	display: none;
+	color: red;
+}
+.question {
+	background-color: #e3e3e3;
+	width: 80%;
+	margin: auto;
+	padding: 5px 5px 5px 5px;
+	
+}
+.qheader {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+form {
+	width: 100%;
+}
+.input {
+	margin-left: 3%;
+}
+body {
+	background-image: linear-gradient(#2d88c8, #013254, #00101c);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #bababa;
+	margin: 0;
+}
+#main {
+	background-color: #ececec;
+	width: 60%;
+	margin: auto;
+	height: 100%;
+}
+#title {
+	padding-top: 80px;
+	margin: auto;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	font-family: times;
+	padding-bottom: 10px;
+}
+#titlebreak {
+	width: 60%;
+}
+a {
+	text-decoration: none;
+}
+#content {
+	width: 95%;
+	background-color: #ececec;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	font-size: 1.2em;
+	
+}
+.subtitle {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: auto;
+	width: 100px;
+	border-radius: 10px;
+}
+#quiz {
+	background-color: #d6d6d6;
+}
+#footer {
+	height: 80px;
+	background-color: white;
+	width: 100%;
+}
+</style>
+</body>
+
+</html>

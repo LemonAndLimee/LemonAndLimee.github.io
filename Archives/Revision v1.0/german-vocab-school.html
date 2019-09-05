@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>GCSE Revision</title>
+
+<div id="header">
+<div id="webtitle">GCSE Revision</div>
+<a href="index.html"><div class="headertitle">Home</div></a>
+<div class="headertitle">
+ <div class="dropdown">
+  <button class="dropbtn">Subjects</button>
+  <div class="dropdown-content">
+    <a href="building.html">Maths</a>
+    <a href="english.html">English</a>
+    <a href="biology.html">Biology</a>
+    <a href="building.html">Chemistry</a>
+    <a href="physics.html">Physics</a>
+    <a href="building.html">History</a>
+    <a href="german.html">German</a>
+    <a href="computing.html">Computer Science</a>
+    <a href="building.html">Art</a>
+  </div>
+</div> 
+</div>
+<a href="building.html"><div class="headertitle">Exams</div></a>
+<a href="building.html"><div class="headertitle">Revision Timetable</div></a>
+</div>
+
+<style type="text/css">
+#header {
+	height: 50px;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+#webtitle {
+	font-size: 1.2em;
+	padding-top: 15px;
+	padding-left: 10%;
+	font-weight: bold;
+	display: inline-block;
+}
+a {
+	color: black;
+}
+.headertitle {
+	padding-left: 3%;
+	display: inline-block;
+	font-family: helvetica;
+	color: black;
+}
+.dropbtn {
+	background-color: white;
+    font-size: 16px;
+    border: none;
+    font-family: helvetica;
+    height: 100%;
+    padding-bottom: 20%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+
+<div id="title">School</div>
+
+<hr id="titlebreak">
+
+<div id="buttons"><button class="show" id="t" onclick="toggle('t')">Hide</button> <button class="show" id="d" onclick="toggle('d')">Hide</button></div>
+</br></br>
+
+<div id="content">
+<div class="word"><span class="term">die Aula</span> <span class="def">assembly hall</span></div>
+</br></br>
+<div class="word"><span class="term">die Bibliothek</span> <span class="def">library</span></div>
+</br></br>
+<div class="word"><span class="term">Biologie</span> <span class="def">biology</span></div>
+</br></br>
+<div class="word"><span class="term">der Bleistift</span> <span class="def">pencil</span></div>
+</br></br>
+<div class="word"><span class="term">das B&uuml;ro</span> <span class="def">office</span></div>
+</br></br>
+<div class="word"><span class="term">Chemie</span> <span class="def">chemistry</span></div>
+</br></br>
+<div class="word"><span class="term">der Computerraum</span> <span class="def">computer room</span></div>
+</br></br>
+<div class="word"><span class="term">Deutsch</span> <span class="def">German</span></div>
+</br></br>
+<div class="word"><span class="term">der Druck</span> <span class="def">pressure</span></div>
+</br></br>
+<div class="word"><span class="term">Englisch</span> <span class="def">English</span></div>
+</br></br>
+<div class="word"><span class="term">Erdkunde</span> <span class="def">geography</span></div>
+</br></br>
+<div class="word"><span class="term">das Etui</span> <span class="def">pencil case</span></div>
+</br></br>
+<div class="word"><span class="term">Filzstifte</span> <span class="def">felt-tip pens</span></div>
+</br></br>
+<div class="word"><span class="term">Franz&ouml;sisch</span> <span class="def">French</span></div>
+</br></br>
+<div class="word"><span class="term">meine Freunde/Freundinnen</span> <span class="def">my friends</span></div>
+</br></br>
+<div class="word"><span class="term">der F&uuml;ller</span> <span class="def">fountain pen</span></div>
+</br></br>
+<div class="word"><span class="term">der Gang</span> <span class="def">corridor</span></div>
+</br></br>
+<div class="word"><span class="term">Gesamtschule</span> <span class="def">comprehensive school</span></div>
+</br></br>
+<div class="word"><span class="term">Geschichte</span> <span class="def">history</span></div>
+</br></br>
+<div class="word"><span class="term">Gesellschaft</span> <span class="def">sociology</span></div>
+</br></br>
+<div class="word"><span class="term">Grundschule</span> <span class="def">primary school</span></div>
+</br></br>
+<div class="word"><span class="term">das Gymnasium</span> <span class="def">grammar school</span></div>
+</br></br>
+<div class="word"><span class="term">die Hausaufgaben</span> <span class="def">homework</span></div>
+</br></br>
+<div class="word"><span class="term">Informatik</span> <span class="def">computer science</span></div>
+</br></br>
+<div class="word"><span class="term">die Kantine</span> <span class="def">canteen</span></div>
+</br></br>
+<div class="word"><span class="term">die Klassenarbeit(en)</span> <span class="def">test</span></div>
+</br></br>
+<div class="word"><span class="term">die Klassenfahrt</span> <span class="def">school trip</span></div>
+</br></br>
+<div class="word"><span class="term">das Klassenzimmer</span> <span class="def">classroom</span></div>
+</br></br>
+<div class="word"><span class="term">das Kleid</span> <span class="def">dress</span></div>
+</br></br>
+<div class="word"><span class="term">die Krawatte</span> <span class="def">tie</span></div>
+</br></br>
+<div class="word"><span class="term">der Kuli</span> <span class="def">ballpoint pen/biro</span></div>
+</br></br>
+<div class="word"><span class="term">Kunst</span> <span class="def">art</span></div>
+</br></br>
+<div class="word"><span class="term">das Labor</span> <span class="def">laboratory</span></div>
+</br></br>
+<div class="word"><span class="term">das Lehrerzimmer</span> <span class="def">staffroom</span></div>
+</br></br>
+<div class="word"><span class="term">das Lineal</span> <span class="def">ruler</span></div>
+</br></br>
+<div class="word"><span class="term">Mathe(matik)</span> <span class="def">math(ematic)s</span></div>
+</br></br>
+<div class="word"><span class="term">die Mittagspause</span> <span class="def">lunch break</span></div>
+</br></br>
+<div class="word"><span class="term">Musik</span> <span class="def">music</span></div>
+</br></br>
+<div class="word"><span class="term">der Musikraum</span> <span class="def">music room</span></div>
+</br></br>
+<div class="word"><span class="term">Naturwissenschaft(en)</span> <span class="def">science(s)</span></div>
+</br></br>
+<div class="word"><span class="term">die Noten</span> <span class="def">grades</span></div>
+</br></br>
+<div class="word"><span class="term">die Oberstufe</span> <span class="def">(equivalent to sixth form)</span></div>
+</br></br>
+<div class="word"><span class="term">die Pause</span> <span class="def">break</span></div>
+</br></br>
+<div class="word"><span class="term">das Pflichtfach</span> <span class="def">compulsory subject</span></div>
+</br></br>
+<div class="word"><span class="term">Physik</span> <span class="def">physics</span></div>
+</br></br>
+<div class="word"><span class="term">Politik</span> <span class="def">politics</span></div>
+</br></br>
+<div class="word"><span class="term">die Pr&uuml;fung(en)</span> <span class="def">exam</span></div>
+</br></br>
+<div class="word"><span class="term">der Radiergummi</span> <span class="def">rubber</span></div>
+</br></br>
+<div class="word"><span class="term">Religion</span> <span class="def">RE</span></div>
+</br></br>
+<div class="word"><span class="term">die Rezeption</span> <span class="def">reception</span></div>
+</br></br>
+<div class="word"><span class="term">die Schule</span> <span class="def">school</span></div>
+</br></br>
+<div class="word"><span class="term">Schulf&auml;cher</span> <span class="def">school subjects</span></div>
+</br></br>
+<div class="word"><span class="term">das Schulgel&auml;nde</span> <span class="def">school grounds</span></div>
+</br></br>
+<div class="word"><span class="term">der Schulhof</span> <span class="def">playground</span></div>
+</br></br>
+<div class="word"><span class="term">das Schuljahr</span> <span class="def">school year</span></div>
+</br></br>
+<div class="word"><span class="term">Schulregeln</span> <span class="def">school rules</span></div>
+</br></br>
+<div class="word"><span class="term">Spanisch</span> <span class="def">Spanish</span></div>
+</br></br>
+<div class="word"><span class="term">Sport</span> <span class="def">PE</span></div>
+</br></br>
+<div class="word"><span class="term">die Sporthalle</span> <span class="def">sport hall</span></div>
+</br></br>
+<div class="word"><span class="term">der Sportplatz</span> <span class="def">sports pitch/ground</span></div>
+</br></br>
+<div class="word"><span class="term">Sprachen</span> <span class="def">languages</span></div>
+</br></br>
+<div class="word"><span class="term">der Taschenrechner</span> <span class="def">calculator</span></div>
+</br></br>
+<div class="word"><span class="term">Theater</span> <span class="def">drama</span></div>
+</br></br>
+<div class="word"><span class="term">die Toiletten</span> <span class="def">toilets</span></div>
+</br></br>
+<div class="word"><span class="term">tragen</span> <span class="def">to wear</span></div>
+</br></br>
+<div class="word"><span class="term">das T-Shirt</span> <span class="def">t-shirt</span></div>
+</br></br>
+<div class="word"><span class="term">Universit&auml;t</span> <span class="def">university</span></div>
+</br></br>
+<div class="word"><span class="term">das Wahlfach</span> <span class="def">optional subject</span></div>
+</br></br>
+<div class="word"><span class="term">Wirtschaft</span> <span class="def">economics</span></div>
+</br></br>
+<div class="word"><span class="term">das Zeugnis</span> <span class="def">report</span></div>
+</br></br>
+</br></br>
+</br></br>
+<div class="word"><span class="term">... ist/sind (streng) verboten</span> <span class="def">... is (strictly) forbidden</span></div>
+</br></br>
+<div class="word"><span class="term">Man darf/Wir d&uuml;rfen</span> <span class="def">you/we are allowed to</span></div>
+</br></br>
+<div class="word"><span class="term">Man soll/Wir sollen</span> <span class="def">you/we should</span></div>
+</br></br>
+<div class="word"><span class="term">Man muss/Wir m&uuml;ssen</span> <span class="def">you/we must/have to</span></div>
+</br></br>
+<div class="word"><span class="term">im Klassenzimmer Kaugummi kauen</span> <span class="def">to chew gum in class</span></div>
+</br></br>
+<div class="word"><span class="term">w&auml;hrend der Stunde das Handy benutzen</span> <span class="def">to use phones in class</span></div>
+</br></br>
+<div class="word"><span class="term">kichern/lachen</span> <span class="def">to laugh</span></div>
+</br></br>
+<div class="word"><span class="term">sprechen/plaudern</span> <span class="def">to speak/chat</span></div>
+</br></br>
+<div class="word"><span class="term">an Freunde SMS schicken</span> <span class="def">to send texts to friends</span></div>
+</br></br>
+<div class="word"><span class="term">schw&auml;nzen</span> <span class="def">to truant</span></div>
+</br></br>
+<div class="word"><span class="term">(keine) Piercings haben</span> <span class="def">to have (no) piercings</span></div>
+</br></br>
+<div class="word"><span class="term">Hausaufgaben machen</span> <span class="def">to do homework</span></div>
+</br></br>
+<div class="word"><span class="term">eine Uniform tragen</span> <span class="def">to wear uniform</span></div>
+</br></br>
+
+
+
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+	
+	
+	var tshown = true;
+	var dshown = true;
+	
+	function classloop(x, c) {
+    	elements = document.getElementsByClassName(x);
+    	for (var i = 0; i < elements.length; i++) {
+        	elements[i].style.backgroundColor = c;
+    	}
+	}
+	
+	function toggle(x) {
+		if (x == 't') {
+			if (tshown == true) {
+				classloop('term', 'black');
+				tshown = false;
+				document.getElementById('t').innerHTML = "Show";
+			}
+			else if (tshown == false) {
+				classloop('term', '#fffd64');
+				tshown = true;
+				document.getElementById('t').innerHTML = "Hide";
+			}
+		}
+		else if (x == 'd') {
+			if (dshown == true) {
+				classloop('def', 'black');
+				dshown = false;
+				document.getElementById('d').innerHTML = "Show";
+			}
+			else if (dshown == false) {
+				classloop('def', '#6abb6a');
+				dshown = true;
+				document.getElementById('d').innerHTML = "Hide";
+			}
+		}
+	}
+
+</script>
+
+
+<div id="footer">
+</div>
+
+<style type="text/css">
+#buttons {
+	background-color: yellow;
+	width: 55%;
+	margin: auto;
+}
+.show {
+	background-color: #d6d6d6;
+	border: none;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: times;
+	border-radius: 10px;
+	margin-top: 1%;
+}
+.show:hover {
+	background-color: #c6c6c6;
+}
+#t {
+	float: left;
+}
+#d {
+	float: right;
+}
+#content {
+	width: 95%;
+	background-color: #ececec;
+	height: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	padding-top: 5px;
+	font-size: 1.2em;
+	padding-bottom: 1%;
+	font-family: times;
+	text-align: center;
+}
+.word {
+	width: 60%;
+	margin: auto;
+	padding: none;
+}
+.term {
+	float: left;
+	background-color: #fffd64;
+	border-radius: 5px;
+}
+.term:hover {
+	background-color: #fffd64;
+}
+.def:hover {
+	background-color: #6abb6a;
+}
+.def {
+	float: right;
+	background-color: #6abb6a;
+	border-radius: 5px;
+}
+body {
+	background-image: linear-gradient(#ef5f54, #832620, #3c0400);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #bababa;
+	margin: 0;
+}
+#main {
+	background-color: #ececec;
+	width: 60%;
+	margin: auto;
+	height: 100%;
+	font-family: helvetica;
+	padding-bottom: 2%;
+}
+#title {
+	padding-top: 80px;
+	margin: auto;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+	font-family: times;
+	padding-bottom: 10px;
+}
+#titlebreak {
+	width: 60%;
+}
+.text {
+	opacity: 0.8;
+	background-color: #970900;
+	font-family: georgia;
+	height: 100%;
+	margin-top: -40px;
+	padding-top: 40px;
+	width: 100%;
+	border-radius: 40px;
+	font-size: 1.2em;
+}
+
+#footer {
+	height: 80px;
+	background-color: white;
+	width: 100%;
+}
+</style>
+</body>
+
+</html>
